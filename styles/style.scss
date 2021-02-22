@@ -1,0 +1,48 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+main{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .rotatingFrame{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    background: red;
+    border-radius: 15px;
+    overflow: hidden;
+    transform-origin: center;
+    z-index: 0;
+    .overlay{
+      height: 15%;
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      // background: rgba(0,0,0,.5);
+      // backdrop-filter: blur(3px);
+      // backdrop-filter: grayscale(100%);
+      #textRotor{
+
+        h1{
+          font-weight: 900;
+          color: #fff;
+        }
+        h2{
+          font-weight: 100;
+          color: #fff;
+        }
+      }
+
+    }
+    img{
+      margin-top: 200px;
+      height: 150%;
+      transform-origin: center;
+    }
+  }
+}
