@@ -26,12 +26,9 @@ document.onmousemove = handleMouseMove;
         elem = document.getElementById("rotator");
         elemImg = document.getElementById("imageRotor");
         elemText = document.getElementById("textRotor");
-        elem.style.transform = "perspective(1000px) rotateY("+ (event.pageX-window.innerWidth/2)/10 +"deg) rotateX("+ -(event.pageY-window.innerHeight/2)/10 +"deg)";
-        elemImg.style.transform = "translate("+ ( -(event.pageX-window.innerWidth/2)/20-30  )+"px, "+ ( -(event.pageY-window.innerHeight/2)/20 - 250 ) +"px)";
-        elemText.style.transform = "translate("+ ( (event.pageX-window.innerWidth/2)/10 )+"px, "+ ( (event.pageY-window.innerHeight/2)/10 ) +"px)";
-
-
-
+        elem.style.transform = `perspective(1000px) rotateY(${(event.pageX-window.innerWidth/2)/10}deg) rotateX(${-(event.pageY-window.innerHeight/2)/10}deg)`;
+        elemImg.style.transform = `translate(${-(event.pageX-window.innerWidth/2)/20-30}px, ${-(event.pageY-window.innerHeight/2)/20-250}px)`;
+        elemText.style.transform = `translate(${((event.pageX-window.innerWidth/2)/10)}px, ${( (event.pageY-window.innerHeight/2)/10 )}px)`;
     }
 
 
